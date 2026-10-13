@@ -30,7 +30,8 @@ public class Factura {
     public void setCantidad(int cantidad) {
         if (cantidad > 0) {
             this.cantidad = cantidad;
-        } else {
+        } 
+        else {
             this.cantidad = 0;
         }
     }
@@ -42,7 +43,8 @@ public class Factura {
     public void setPrecioArticulo(double precioArticulo) {
         if (precioArticulo > 0) {
             this.precioArticulo = precioArticulo;
-        } else {
+        } 
+        else {
             this.precioArticulo = 0.0;
         }
     }
