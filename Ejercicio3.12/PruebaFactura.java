@@ -11,13 +11,13 @@ public class PruebaFactura {
         System.out.println("Precio por articulo: $" + factura1.getPrecioArticulo());
         System.out.println("Monto total: $" + factura1.obtenerMontoFactura());
 
-        System.out.println("\n=== PRUEBA DE VALIDACION ===");
+        System.out.println("\nPRUEBA DE VALIDACION");
 
         factura1.setCantidad(-3);
         factura1.setPrecioArticulo(-10.0);
 
-        System.out.println("Cantidad despues de validar: " + factura1.getCantidad());
-        System.out.println("Precio despues de validar: $" + factura1.getPrecioArticulo());
-        System.out.println("Monto total despues de validar: $" + factura1.obtenerMontoFactura());
+        System.out.println("Cantidad nueva: " + factura1.getCantidad());
+        System.out.println("Precio nuevo: $" + factura1.getPrecioArticulo());
+        System.out.println("Monto total nuevo: $" + factura1.obtenerMontoFactura());
     }
 }
