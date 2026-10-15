@@ -1,15 +1,15 @@
 
-public class FrecCardiacas {private String nombre; private String apellido; private int mesNacimiento; private int diaNacimiento; private int anioNacimiento;
-
-    public FrecuenciasCardiacas(String nombre, String apellido, int mesNacimiento, int diaNacimiento, int anioNacimiento) {
+public class FrecCardiacas {private String nombre; private String apellido; private int mesNacimiento; private int diaNacimiento; private int anioNacimiento; private int edad;
+    public FrecCardiacas(String nombre, String apellido, int mesNacimiento, int diaNacimiento, int anioNacimiento, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.mesNacimiento = mesNacimiento;
         this.diaNacimiento = diaNacimiento;
         this.anioNacimiento = anioNacimiento;
+        this.edad = edad;
     }
 
-    public String getNombre() {
+        public String getNombre() {
         return nombre;
     }
 
@@ -29,9 +29,10 @@ public class FrecCardiacas {private String nombre; private String apellido; priv
         return anioNacimiento;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public int getEdad() {
+        return edad;
     }
+//Se usa un getter para la edad y no un calculo del sistema ya que no hemos aprendido a usar la libreria de tiempo de java
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
@@ -49,10 +50,12 @@ public class FrecCardiacas {private String nombre; private String apellido; priv
         this.anioNacimiento = anioNacimiento;
     }
 
-//No se realizo la parte de calcular edad porque no dominamos aún la libreria de java.time
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
     public int calcularFrecuenciaMaxima() {
-        return 220 - calcularEdad();
+        return 220 - getEdad();
     }
 
     public double calcularFrecuenciaMinimaEsperada() {
