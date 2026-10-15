@@ -2,50 +2,31 @@
 public class PruebaFrecCardiacas {
 
     public static void main(String[] args) {
+        FrecCardiacas persona = new FrecCardiacas("Francis", "Almeida", 10, 15, 2007, 19);
 
-        String nombre = JOptionPane.showInputDialog(
-                "Ingrese su primer nombre:");
+        System.out.println("Información Personal");
 
-        String apellido = JOptionPane.showInputDialog(
-                "Ingrese su apellido:");
+        System.out.println("Nombre: " + persona.getNombre()
+                + " " + persona.getApellido());
 
-        int mes = Integer.parseInt(
-                JOptionPane.showInputDialog(
-                        "Mes de nacimiento:"));
-
-        int dia = Integer.parseInt(
-                JOptionPane.showInputDialog(
-                        "Día de nacimiento:"));
-
-        int anio = Integer.parseInt(
-                JOptionPane.showInputDialog(
-                        "Año de nacimiento:"));
-
-        FrecuenciasCardiacas persona = new FrecuenciasCardiacas(nombre, apellido, mes, dia, anio);
-
-        String mensaje = "INFORMACIÓN PERSONAL\n";
-
-        mensaje += "Nombre: " + persona.getNombre()
-                + " " + persona.getApellido();
-
-        mensaje += "\nFecha de nacimiento: "
+        System.out.println("Fecha de nacimiento: "
                 + persona.getMesNacimiento() + "/"
                 + persona.getDiaNacimiento() + "/"
-                + persona.getAnioNacimiento();
+                + persona.getAnioNacimiento());
 
-        mensaje += "\nEdad: " + persona.calcularEdad()
-                + " años";
+        System.out.println("Edad: " + persona.getEdad()
+                + " años");
 
-        mensaje += "\nFrecuencia cardíaca máxima: "
+        System.out.println("Frecuencia cardíaca máxima: "
                 + persona.calcularFrecuenciaMaxima()
-                + " pulsaciones por minuto";
+                + " pulsaciones por minuto");
 
-        mensaje += "\nRango esperado: "
+        System.out.println("Frecuencia mínima esperada: "
                 + persona.calcularFrecuenciaMinimaEsperada()
-                + " - "
-                + persona.calcularFrecuenciaMaximaEsperada()
-                + " pulsaciones por minuto";
+                + " pulsaciones por minuto");
 
-        JOptionPane.showMessageDialog(null, mensaje);
+        System.out.println("Frecuencia máxima esperada: "
+                + persona.calcularFrecuenciaMaximaEsperada()
+                + " pulsaciones por minuto");
     }
 }
