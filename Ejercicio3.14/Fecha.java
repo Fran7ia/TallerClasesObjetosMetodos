@@ -5,27 +5,43 @@ public class Fecha {
     private int anio;
 
     public Fecha(int mes, int dia, int anio) 
-    {this.mes = mes; this.dia = dia; this.anio = anio;}
+    {
+        this.mes = mes; this.dia = dia; this.anio = anio;
+    }
   
   public int getMes() 
-    {return mes;}
+    {
+        return mes;
+    }
 
   public int getDia()
-    {return dia;}
+    {
+        return dia;
+    }
 
   public int getAnio() 
-    {return anio;}
+    {
+        return anio;
+    }
 
 
   public void setMes(int mes) 
-    {this.mes = mes;}
+    {
+        this.mes = mes;
+    }
 
   public void setDia(int dia) 
-    {this.dia = dia;}
+    {
+        this.dia = dia;
+    }
 
   public void setAnio(int anio) 
-    {this.anio = anio;}
+    {
+        this.anio = anio;
+    }
 
   public void mostrarFecha()
-    {System.out.println(mes + "/" + dia + "/" + anio);}
+    {
+    System.out.println(mes + "/" + dia + "/" + anio);
+    }
 }
