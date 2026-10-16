@@ -2,7 +2,8 @@
 public class PruebaPerfilMedico {
 
     public static void main(String[] args) {
-//Los datos se ingresan directamente al constructor ya que aún no hemos aprendido como usar funciones para agregar escanear lo que diga el usuario
+//Los datos se ingresan directamente al constructor ya que aún no hemos aprendido como 
+//usar funciones para agregar escanear lo que diga el usuario
         PerfilMedico persona = new PerfilMedico(
                 "Francis", "Almeida", "Masculino",
                 15, 10, 2007, 19, 184, 100);
